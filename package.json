@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "Full_project": "npx playwright test",
+    "registerTest": "npx playwright test tests/RegisterTestcases.spec.js",
+    "fillDetailsTest": "npx playwright test tests/VerifyFillDeatils.spec.js",
+    "productTest": "npx playwright test tests/verifyProductAdd.spec.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -12,4 +17,5 @@
     "@playwright/test": "^1.58.0",
     "@types/node": "^25.0.10"
   }
+  
 }
