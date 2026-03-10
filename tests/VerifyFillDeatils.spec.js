@@ -1,13 +1,10 @@
-const Homepage =require('../Pages/homePage')
-const{test, expect}= require('../fixtures/loginFixture')
-const userData =require('../data/userData.json')
+const HomePage = require("../pages/HomePage")
+const { test, expect } = require('../fixtures/loginFixture')
+const userData = require('../data/userData.json')
 
-test('fill user Details flow', async({page}, testInfo) => {
+test('fill user Details flow', async ({ page }, testInfo) => {
 
-    const homepage =new Homepage(page)
+    const homepage = new HomePage(page)
     await homepage.fillDetails(userData.UserData);
-
-// this is test in framwork2
-//chnage by Pooja 
 
 })
